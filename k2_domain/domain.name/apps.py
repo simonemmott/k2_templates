@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class K2DomainConfig(AppConfig):
+class {{domain.config_class_name()}}(AppConfig):
     name = '{{domain.name}}'
