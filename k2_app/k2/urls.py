@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 from k2_core import mixins
 
+
 urlpatterns = [
 {% for app_domain in app.application_domains.all() %}    path('{{app_domain.domain.name}}/', include('{{app_domain.domain.name}}.urls')),
 {% endfor %}    path('admin/', admin.site.urls),
